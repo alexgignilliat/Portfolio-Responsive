@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  
+  <style>
+    a {
+      color: rgb(0, 0, 0);
+      text-shadow: 0px 0px 2px #725772;
+    }
+
+    a:hover {
+      color: #ffffff;
+      box-shadow: 0px 0px 5px rgb(202, 202, 202);
+      background-color: #251b255d;
+      
+    }
+
+    
+
+
+    /* .navBoxTeal {
+    background-color: red;
+    width: 190px;
+    height: 78px;
+    position: relative;
+    left: 10px;
+    bottom: 80px;
+} */
+
+    body {
+      background-image: url('./assets/images/prism.png');
+      line-height: 2.2;
+      margin: auto;
+      margin-bottom: 100px;
+      font-family: 'Quicksand', sans-serif;
+
+    }
+
+    #aboutMe {
+      color: rgb(0, 0, 0);
+      padding: 15px 0px 10px 0px;
+    }
+
+    .headshot {
+      box-shadow: 0px 0px 5px rgba(54, 54, 54, 0.411);
+      margin: 37px 20px -12px 10px;
+    }
+
+    #content {
+      border: 1px solid #777;
+      padding: 0px 25px 0px 25px;
+      transition: 1s;
+    }
+
+    #content:hover {
+
+      box-shadow: 0px 0px 20px #725772;
+      transition-duration: 1s;
+      border: 1px solid rgba(0, 0, 0, 0.055);
+    }
+
+    #navHover:hover {
+      box-shadow: 0px 0px 100px #725772;
+      transition: 1.8s;
+
+    }
+
+    /*- - - START QUERY - - -*/
+    @media (max-width: 640px) {
+      .navbar {
+        padding: 0;
+      }
+
+          /* #aboutMe {
+        display: flex;
+        justify-content: center;
+      } */
+
+      .headshot {
+        width: 90%;
+        margin: 0px 20px 30px 20px;
+      }
+
+      .navbar-brand {
+        flex: 100%;
+        text-align: center;
+        background: #725772;
+        margin: 0;
+        height: 75px;
+        padding-top: 18px;
+      }
+
+      .nav {
+        margin: 0 auto;
+      }
+
+      #text {
+        line-height: 3;
+      }
+
+      body {
+        font-size: 18px;
+        line-height: 2.5;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      #aboutMe {
+        position: relative;
+        left: 30px;
+      }
+
+      hr {
+        width: 86%;
+        margin-bottom: 35px;
+      }
+
+
+    }
+
+    /*- - - END QUERY - - -*/
+
+    p {
+      padding: 0px 10px 10px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-light bg-light" style="border-bottom:2px solid #725772; transition: .5s;"
+    id="navHover">
+    <a class="navbar-brand" href="https://github.com/alexgignilliat" target="_blank">
+      <h3 class="navName">Alex Gignilliat</h3>
+    </a>
+    <ul class="nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7">
+        <div class="container" style="background-color: white;" id="content">
+          <h2 id="aboutMe"><strong>About Me</strong></h2>
+          <hr style="background-color: rgb(224, 224, 224); height: 1px;">
+          <div class="pull-left">
+            <p id="text"><img src="assets/images/headshot.png" class="headshot" style="float: left">
+          </div>From a very young age, I've had a passion for technology and a flair for expressing
+          myself artistically.
+          When I wasn't assembling personal computers for the fun of it, I was teaching myself
+          new instruments and
+          learning my favorite songs by ear. So far, I've taught myself guitar, drums, bass
+          and piano, and have
+          performed at venues across the southeast. Naturally, I dove right into music
+          production and audio
+          engineering. Through learning the in's and out's of different digital audio
+          workstations, I believe this
+          is where I first developed a deep appreciation for beautiful interfaces and a
+          seamless user experience.
+          <br>
+          <hr>During the advent of blockchain, I became absolutely obsessed with the idea
+          of decentralized
+          currency, as well as blockchain's implications regarding the tokenization of music,
+          art, real estate,
+          etc. Because of my love for assembling and optimizing computers, I began building
+          mining rigs to
+          contribute to and support various digital asset networks. Around that time, I became
+          increasingly
+          fascinated with the software that giant tech companies and startups alike were
+          utilizing - and they all
+          seemed to have the most interesting and dynamic websites. On a whim, I started
+          teaching myself Python 2
+          (honestly, I just thought it had a cool name so I went for it) and absolutely fell
+          in love, just like I
+          had with the hardware side of computers as a child.
+          <br>
+          <hr>
+          I'm currently attending the full-stack web development program at Georgia Tech to
+          continue honing my
+          skills - not just to become employer ready, but to be employer competitive. I'm
+          ecstatic to continue
+          learning and to leverage my technical experience and artistic nature into a
+          fulfilling career as a fully
+          fledged web developer!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
