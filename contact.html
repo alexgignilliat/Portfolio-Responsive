@@ -19,26 +19,19 @@
     }
 
     a:hover {
-      color: #ffffff;
+      color: rgb(255, 255, 255);
       box-shadow: 0px 0px 5px rgb(202, 202, 202);
-      background-color: #251b255d;
-
-    }
-
-    .navBoxTeal {
-      background-color: #29D1CE;
-      width: 190px;
-      height: 78px;
-      position: relative;
-      left: 10px;
-      bottom: 80px;
+      background-color: #725772;
+      transition: .5s;
     }
 
     body {
       background-image: url('./assets/images/prism.png');
-      line-height: 2;
+      line-height: 2.2;
       font-family: 'Quicksand', sans-serif;
+      font-size: 16px;
       margin-bottom: 125px;
+
     }
 
     footer {
@@ -52,19 +45,13 @@
       border-top: 3px solid rgb(71, 0, 0);
     }
 
-
-
-
     #navHover:hover {
       box-shadow: 0px 0px 100px #725772;
       transition: 1.8s;
-
     }
 
     #contactMain {
       border: 1px solid #777;
-
-
     }
 
     #contactMain:hover {
@@ -78,8 +65,6 @@
       color: white;
       transition: 1s;
     }
-
-
 
     /*START QUERY*/
     @media (max-width: 640px) {
@@ -104,7 +89,6 @@
         margin: 0 auto;
       }
     }
-
     /*END QUERY*/
 
     p {
@@ -131,13 +115,14 @@
     </ul>
   </nav>
 
-  <br>
+  <br> <!--Breaking between navigation bar and main page content-->
+  <!--This was definitely a learning experience and going forward, I will definitely be using an external stylesheet. Unfortunately, due to time constraints, I haven't been able to both complete this assignment *and* convert all of my styling to an external CSS file. That is something I will be undertaking soon, simply to help clean up the HTML and make it more easily understandable-->
   <div class="container" style="margin-top: -10px">
     <div class="row">
       <div class="col-sm-12 col-md-8 col-lg-6 ">
         <div class="card mt-1">
           <div class="card-body" id="contactMain">
-            <h2 class="card-title" style="padding: 0px 0px 10px 0px;"><strong>Contact</strong></h2>
+            <h2 class="card-title" style="padding: 0px 0px 10px 0px; text-shadow: 0px 0px 2px #725772"><strong>Contact</strong></h2>
             <hr style="background-color: rgb(224, 224, 224); height: 1px;">
             <form>
               <div class="form-group">

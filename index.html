@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-  
+
   <style>
     a {
       color: rgb(0, 0, 0);
@@ -19,23 +19,12 @@
     }
 
     a:hover {
-      color: #ffffff;
+      color: rgb(255, 255, 255);
       box-shadow: 0px 0px 5px rgb(202, 202, 202);
-      background-color: #251b255d;
-      
+      background-color: #725772;
+      transition: .5s;
+
     }
-
-    
-
-
-    /* .navBoxTeal {
-    background-color: red;
-    width: 190px;
-    height: 78px;
-    position: relative;
-    left: 10px;
-    bottom: 80px;
-} */
 
     body {
       background-image: url('./assets/images/prism.png');
@@ -43,23 +32,24 @@
       margin: auto;
       margin-bottom: 100px;
       font-family: 'Quicksand', sans-serif;
-
+      font-size: 16px;
     }
 
     footer {
-            width: 100%;
-            height: 40px;
-            background-color: #777;
-            position: fixed;
-            bottom: 0;
-            margin: 0;
-            text-align: center;
-            border-top: 3px solid #725772;
-        }
+      width: 100%;
+      height: 40px;
+      background-color: #777;
+      position: fixed;
+      bottom: 0;
+      margin: 0;
+      text-align: center;
+      border-top: 3px solid #725772;
+    }
 
     #aboutMe {
       color: rgb(0, 0, 0);
       padding: 15px 0px 10px 0px;
+      text-shadow: 0px 0px 2px #725772
     }
 
     .headshot {
@@ -69,12 +59,13 @@
 
     #content {
       border: 1px solid #777;
-      padding: 0px 25px 0px 25px;
-      transition: 1s;
+      padding: 0px 26px 0px 26px;
+      margin: -10px 4px 0px 4px;
+      
+      
     }
 
     #content:hover {
-
       box-shadow: 0px 0px 20px #725772;
       transition-duration: 1s;
       border: 1px solid rgba(0, 0, 0, 0.055);
@@ -83,19 +74,13 @@
     #navHover:hover {
       box-shadow: 0px 0px 100px #725772;
       transition: 1.8s;
-
-    }
+      }
 
     /*- - - START QUERY - - -*/
     @media (max-width: 640px) {
       .navbar {
         padding: 0;
       }
-
-          /* #aboutMe {
-        display: flex;
-        justify-content: center;
-      } */
 
       .headshot {
         width: 90%;
@@ -115,30 +100,25 @@
         margin: 0 auto;
       }
 
-      #text {
-        line-height: 3;
-      }
 
-      body {
-        font-size: 18px;
-        line-height: 2.5;
-      }
-
-      p {
+      #content {
         text-align: center;
+        line-height: 2.2;
+        font-size: 19px;
       }
 
       #aboutMe {
+        display: flex;
+        justify-content: left;
         position: relative;
         left: 30px;
+        
       }
 
       hr {
-        width: 86%;
+        width: 100%;
         margin-bottom: 35px;
       }
-
-
     }
 
     /*- - - END QUERY - - -*/
@@ -150,24 +130,26 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-xl navbar-light bg-light" style="border-bottom:2px solid #725772; transition: .5s;"
-    id="navHover">
-    <a class="navbar-brand" href="https://github.com/alexgignilliat" target="_blank">
-      <h3 class="navName">Alex Gignilliat</h3>
-    </a>
-    <ul class="nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </nav>
-  <br>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light" style="border-bottom:2px solid #725772;"
+      id="navHover">
+      <a class="navbar-brand" href="https://github.com/alexgignilliat" target="_blank">
+        <h3 class="navName">Alex Gignilliat</h3>
+      </a>
+      <ul class="nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <br> <!--Breaking between navigation bar and main page content-->
+    <!--This was definitely a learning experience and going forward, I will definitely be using an external stylesheet. Unfortunately, due to time constraints, I haven't been able to both complete this assignment *and* convert all of my styling to an external CSS file. That is something I will be undertaking soon, simply to help clean up the HTML and make it more easily understandable-->
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7">
@@ -222,8 +204,8 @@
   </div>
 
   <footer>
-      <p>Alex Gignilliat &copy;</p>
-    </footer>
+    <p>Alex Gignilliat &copy;</p>
+  </footer>
 
 </body>
 

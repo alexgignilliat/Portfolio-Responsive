@@ -11,53 +11,42 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <style>
-        a {
-            color: #777;
-        }
-
-        /* .navBoxTeal { 
-    background-color: #29D1CE;
-    width: 190px;
-    height: 78px;
-    position: relative;
-    left: 10px;
-    bottom: 80px;
-} */
-
         body {
             background-image: url('./assets/images/prism.png');
-            line-height: 2;
+            line-height: 2.2;
             font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
         }
 
         footer {
-  width: 100%;
-  height: 40px;
-  background-color: #777;
-  position: fixed;
-  bottom: 0;
-  margin: 0;
-  text-align: center;
-  border-top: 3px solid #725772;
-}
+            width: 100%;
+            height: 40px;
+            background-color: #777;
+            position: fixed;
+            bottom: 0;
+            margin: 0;
+            text-align: center;
+            border-top: 3px solid #725772;
+        }
 
-#navHover:hover {
-      box-shadow: 0px 0px 100px #725772;
-      transition: 1.8s;
+        #navHover:hover {
+            box-shadow: 0px 0px 100px #725772;
+            transition: 1.8s;
 
-    }
+        }
 
-    a {
-      color: rgb(0, 0, 0);
-      text-shadow: 0px 0px 2px #725772;
-    }
+        a {
+            color: rgb(0, 0, 0);
+            text-shadow: 0px 0px 2px #725772;
+        }
 
-    a:hover {
-      color: #ffffff;
-      box-shadow: 0px 0px 5px rgb(202, 202, 202);
-      background-color: #251b255d;
-      
-    }
+        a:hover {
+            color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 5px rgb(202, 202, 202);
+            background-color: #725772;
+            transition: .5s;
+
+        }
 
         #main-div {
             background-color: white;
@@ -65,10 +54,6 @@
             border: 1px solid #777;
         }
 
-       
-        #aboutMe {
-            padding-top: 20px;
-        }
 
         .projectImg {
             /* float: left; */
@@ -77,15 +62,15 @@
         }
 
         #content {
-      border: 1px solid #777;
-      padding: 0px 25px 0px 25px;
-      max-width: 550px;
+            border: 1px solid #777;
+            padding: 0px 25px 0px 25px;
+            max-width: 550px;
         }
 
         hr {
-        width: 86%;
-        margin-bottom: 20px;
-      }
+            width: 86%;
+            margin-bottom: 20px;
+        }
 
         .wowBox {
             width: 200px;
@@ -94,24 +79,20 @@
             text-align: center;
             padding-top: 10px;
             opacity: 0.95;
-            color: white; 
+            color: white;
             position: absolute;
             bottom: 20px;
             left: 25px;
-            
-            
         }
-
-        
 
         #mainContent:hover {
             box-shadow: 0px 0px 20px #725772;
-      transition-duration: 1s;
-      border: 1px solid rgba(0, 0, 0, 0.055);
+            transition-duration: 1s;
+            border: 1px solid rgba(0, 0, 0, 0.055);
         }
 
         .imageEffect {
-            filter:opacity(.5)
+            filter: opacity(.5)
         }
 
         .imageEffect:hover {
@@ -119,127 +100,146 @@
             transition: 1.5s;
         }
 
-       
-        
-      
+        /* - - -START QUERY - - -*/
         @media (max-width: 767px) {
             .wowBox {
-                margin-left: 22.1%;    
+                margin-left: 22.1%;
             }
 
             #none {
                 display: none;
             }
-        }
-        
 
-        /*START QUERY*/
+            
+        }
+        /*- - - END QUERY - - -*/
+        /* - - -START QUERY - - -*/
         @media (max-width: 640px) {
             .navbar {
                 padding: 0;
             }
 
             .navbar-brand {
-            flex: 100%;
-            text-align: center;
-            background: #725772;
-            margin: 0;
-            height: 75px;
-            padding-top: 18px;
-        }
+                flex: 100%;
+                text-align: center;
+                background: #725772;
+                margin: 0;
+                height: 75px;
+                padding-top: 18px;
+            }
 
             .nav {
                 margin: 0 auto;
             }
 
-            
             .projectImg {
                 width: 70%;
                 display: flex;
                 align-content: center;
                 flex-direction: column;
                 margin: 30px auto;
-                
+
+            }
+
+            .imageEffect {
+                max-width: 65%;
+                height: 125%;
+                margin: 0px auto;
+                padding: 10px;
+                position: relative;
+            }
+            
+
+            #mainContent {
+                background-color: red;
+            }
+
+            .wowBox {
+                width: 51.5%;
+                max-width: 51.5%;
+                position: absolute;
+                left: 10px;
+                bottom: -18px;
+                padding: auto;
             }
         }
-
-        /*END QUERY*/
-
-        
+        /*- - - END QUERY - - -*/
     </style>
 </head>
-
 <body>
-        <nav class="navbar navbar-expand-xl navbar-light bg-light" style="border-bottom:2px solid #725772; transition: .5s;"
+    <nav class="navbar navbar-expand-xl navbar-light bg-light" style="border-bottom:2px solid #725772;"
         id="navHover">
-        <a class="navbar-brand" href="https://github.com/alexgignilliat" target="_blank">
-          <h3 class="navName">Alex Gignilliat</h3>
+        <a class="navbar-brand" href="https://www.github.com/alexgignilliat" target="_blank">
+            <h3 class="navName">Alex Gignilliat</h3>
         </a>
         <ul class="nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
         </ul>
-      </nav>
+    </nav>
 
-    <br>
-    
+    <br> 
+    <!--This was definitely a learning experience and going forward, I will definitely be using an external stylesheet. Unfortunately, due to time constraints, I haven't been able to both complete this assignment *and* convert all of my styling to an external CSS file. That is something I will be undertaking soon, simply to help clean up the HTML and make it more easily understandable-->
     <div class="container">
-        <div class="row">
-            
-            <div class="col-xs-12 col-sm-12 col-md-10" style="background-color: rgb(255, 255, 255); max-height: 1300px; max-width: 600px; border: 1px solid #777; margin-bottom: 80px;" id="mainContent">
-                    <h2 style="margin: 15px 25px"><strong>Portfolio</strong></h2>
-            <div class="row">
-                    <hr style="background-color: rgb(224, 224, 224); height: 1px;">
-                <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5" style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;" >
-                    
-                    <img src="assets/images/wow-icon.png" class="imageEffect">
-                    <div class="wowBox">WoW DPS Calculator
-                    </div>     
-                </div>
-                <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5" style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
-                    <img src="assets/images/deathstar-icon.jpg" class="imageEffect">
-                    <div class="wowBox">Death Star v2.0
+        <div class="row"> 
+            <div class="col-xs-12 col-sm-12 col-md-10"
+                style="background-color: rgb(255, 255, 255); max-height: 2000px; max-width: 600px; border: 1px solid #777; margin: -10px 20px 80px 20px; "
+                id="mainContent">
+                <h2 style="margin: 15px 25px; text-shadow: 0px 0px 2px #725772"><strong>Portfolio</strong></h2>
+                <!--Basically what I've done is put two images per row, and then assigned col to each individual picture, depending on where the images need to be at what breakpoints-->
+                <div class="row">
+                    <hr style="background-color: rgb(224, 224, 224); height: 1px; margin-bottom: -4px">
+                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5"
+                        style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
+                        <img src="assets/images/wow-icon.png" class="imageEffect">
+                        <div class="wowBox">WoW DPS Calculator
                         </div>
-                </div>
-            </div>
-            <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5" style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
-                            <img src="assets/images/skyrim-icon.jpg" class="imageEffect">
-                            <div class="wowBox">Skyrim Re-re-re-release
-                                </div>
                     </div>
-                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5" style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
-                            <img src="assets/images/hawking-icon.jpg" class="imageEffect">
-                            <div class="wowBox" style="padding-top: 3px; line-height: 1.5">Stephen Hawking Quote of the Day
-                                </div>
-                </div>
-            </div>
-            <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5" style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;" >
-                            <img src="assets/images/galaxy-icon.jpg" class="imageEffect">
-                            <div class="wowBox">The Entire History of Us
-                                </div>
+                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5"
+                        style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
+                        <img src="assets/images/deathstar-icon.jpg" class="imageEffect">
+                        <div class="wowBox">Death Star v2.0
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5" style="background-color: rgba(255, 255, 255, 0); margin: 20px auto; display: flex; justify-content: center;" id="none"> 
-                        </div>       
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5"
+                        style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
+                        <img src="assets/images/skyrim-icon.jpg" class="imageEffect">
+                        <div class="wowBox">Skyrim Re-re-re-release
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5"
+                        style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
+                        <img src="assets/images/hawking-icon.jpg" class="imageEffect">
+                        <div class="wowBox" style="padding-top: 3px; line-height: 1.5">Stephen Hawking Quote of the Day
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5"
+                        style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
+                        <img src="assets/images/galaxy-icon.jpg" class="imageEffect">
+                        <div class="wowBox">The Entire History of Us
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5"
+                        style="background-color: rgba(255, 255, 255, 0); margin: 20px auto; display: flex; justify-content: center;"
+                        id="none">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <footer>
-            <p>Alex Gignilliat &copy;</p>
-          </footer>
-    
-
+        <p>Alex Gignilliat &copy;</p>
+    </footer>
 </body>
-
 </html>
