@@ -11,126 +11,17 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style-index.css">
 
   <style>
-    a {
-      color: rgb(0, 0, 0);
-      text-shadow: 0px 0px 2px #725772;
-    }
-
-    a:hover {
-      color: rgb(255, 255, 255);
-      box-shadow: 0px 0px 5px rgb(202, 202, 202);
-      background-color: #725772;
-      transition: .5s;
-
-    }
-
     body {
       background-image: url('./assets/images/prism.png');
-      line-height: 2.2;
-      margin: auto;
-      margin-bottom: 100px;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 16px;
-    }
-
-    footer {
-      width: 100%;
-      height: 40px;
-      background-color: #777;
-      position: fixed;
-      bottom: 0;
-      margin: 0;
-      text-align: center;
-      border-top: 3px solid #725772;
-    }
-
-    #aboutMe {
-      color: rgb(0, 0, 0);
-      padding: 15px 0px 10px 0px;
-      text-shadow: 0px 0px 2px #725772
-    }
-
-    .headshot {
-      box-shadow: 0px 0px 5px rgba(54, 54, 54, 0.411);
-      margin: 37px 20px -12px 10px;
-    }
-
-    #content {
-      border: 1px solid #777;
-      padding: 0px 26px 0px 26px;
-      margin: -10px 4px 0px 4px;
-      
-      
-    }
-
-    #content:hover {
-      box-shadow: 0px 0px 20px #725772;
-      transition-duration: 1s;
-      border: 1px solid rgba(0, 0, 0, 0.055);
-    }
-
-    #navHover:hover {
-      box-shadow: 0px 0px 100px #725772;
-      transition: 1.8s;
-      }
-
-    /*- - - START QUERY - - -*/
-    @media (max-width: 640px) {
-      .navbar {
-        padding: 0;
-      }
-
-      .headshot {
-        width: 90%;
-        margin: 0px 20px 30px 20px;
-      }
-
-      .navbar-brand {
-        flex: 100%;
-        text-align: center;
-        background: #725772;
-        margin: 0;
-        height: 75px;
-        padding-top: 18px;
-      }
-
-      .nav {
-        margin: 0 auto;
-      }
-
-
-      #content {
-        text-align: center;
-        line-height: 2.2;
-        font-size: 19px;
-      }
-
-      #aboutMe {
-        display: flex;
-        justify-content: left;
-        position: relative;
-        left: 30px;
-        
-      }
-
-      hr {
-        width: 100%;
-        margin-bottom: 35px;
-      }
-    }
-
-    /*- - - END QUERY - - -*/
-
-    p {
-      padding: 0px 10px 10px 10px;
     }
   </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-xl navbar-light bg-light" style="border-bottom:2px solid #725772;"
+    <nav class="navbar navbar-expand-xxl navbar-light bg-light" style="border-bottom:2px solid #725772;"
       id="navHover">
       <a class="navbar-brand" href="https://github.com/alexgignilliat" target="_blank">
         <h3 class="navName">Alex Gignilliat</h3>
@@ -153,9 +44,9 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7">
-        <div class="container" style="background-color: white;" id="content">
+        <div class="container" style="background-color: rgba(255, 255, 255, 0.555); border-radius: 15px;" id="content">
           <h2 id="aboutMe"><strong>About Me</strong></h2>
-          <hr style="background-color: rgb(224, 224, 224); height: 1px;">
+          <hr style="background-color: rgb(224, 224, 224); height: 1px; ">
           <div class="pull-left">
             <p id="text"><img src="assets/images/headshot.png" class="headshot" style="float: left">
           </div>From a very young age, I've had a passion for technology and a flair for expressing
@@ -199,14 +90,15 @@
       </div>
     </div>
   </div>
-  </div>
-  </div>
-  </div>
-
-  <footer>
-    <p>Alex Gignilliat &copy;</p>
-  </footer>
+  
+  
+<br>
+<footer>
+  <p>Alex Gignilliat &copy;</p>
+</footer>
+  
 
 </body>
+
 
 </html>

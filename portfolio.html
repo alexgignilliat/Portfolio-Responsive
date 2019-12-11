@@ -6,168 +6,19 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-portfolio.css">
     <style>
-        body {
-            background-image: url('./assets/images/prism.png');
-            line-height: 2.2;
-            font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
-        }
-
-        footer {
-            width: 100%;
-            height: 40px;
-            background-color: #777;
-            position: fixed;
-            bottom: 0;
-            margin: 0;
-            text-align: center;
-            border-top: 3px solid #725772;
-        }
-
-        #navHover:hover {
-            box-shadow: 0px 0px 100px #725772;
-            transition: 1.8s;
-
-        }
-
-        a {
-            color: rgb(0, 0, 0);
-            text-shadow: 0px 0px 2px #725772;
-        }
-
-        a:hover {
-            color: rgb(255, 255, 255);
-            box-shadow: 0px 0px 5px rgb(202, 202, 202);
-            background-color: #725772;
-            transition: .5s;
-
-        }
-
-        #main-div {
-            background-color: white;
-            max-width: 90%;
-            border: 1px solid #777;
-        }
-
-
-        .projectImg {
-            /* float: left; */
-            margin: 10px;
-            position: relative;
-        }
-
-        #content {
-            border: 1px solid #777;
-            padding: 0px 25px 0px 25px;
-            max-width: 550px;
-        }
-
-        hr {
-            width: 86%;
-            margin-bottom: 20px;
-        }
-
-        .wowBox {
-            width: 200px;
-            background-color: #725772;
-            height: 55px;
-            text-align: center;
-            padding-top: 10px;
-            opacity: 0.95;
-            color: white;
-            position: absolute;
-            bottom: 20px;
-            left: 25px;
-        }
-
-        #mainContent:hover {
-            box-shadow: 0px 0px 20px #725772;
-            transition-duration: 1s;
-            border: 1px solid rgba(0, 0, 0, 0.055);
-        }
-
-        .imageEffect {
-            filter: opacity(.5)
-        }
-
-        .imageEffect:hover {
-            filter: opacity(1);
-            transition: 1.5s;
-        }
-
-        /* - - -START QUERY - - -*/
-        @media (max-width: 767px) {
-            .wowBox {
-                margin-left: 22.1%;
-            }
-
-            #none {
-                display: none;
-            }
-
-            
-        }
-        /*- - - END QUERY - - -*/
-        /* - - -START QUERY - - -*/
-        @media (max-width: 640px) {
-            .navbar {
-                padding: 0;
-            }
-
-            .navbar-brand {
-                flex: 100%;
-                text-align: center;
-                background: #725772;
-                margin: 0;
-                height: 75px;
-                padding-top: 18px;
-            }
-
-            .nav {
-                margin: 0 auto;
-            }
-
-            .projectImg {
-                width: 70%;
-                display: flex;
-                align-content: center;
-                flex-direction: column;
-                margin: 30px auto;
-
-            }
-
-            .imageEffect {
-                max-width: 65%;
-                height: 125%;
-                margin: 0px auto;
-                padding: 10px;
-                position: relative;
-            }
-            
-
-            #mainContent {
-                background-color: red;
-            }
-
-            .wowBox {
-                width: 51.5%;
-                max-width: 51.5%;
-                position: absolute;
-                left: 10px;
-                bottom: -18px;
-                padding: auto;
-            }
-        }
-        /*- - - END QUERY - - -*/
+    body {
+        background-image: url('./assets/images/prism.png');
+    }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-xl navbar-light bg-light" style="border-bottom:2px solid #725772;"
+    <nav class="navbar navbar-expand-xxl navbar-light bg-light" style="border-bottom:2px solid #725772;"
         id="navHover">
         <a class="navbar-brand" href="https://www.github.com/alexgignilliat" target="_blank">
             <h3 class="navName">Alex Gignilliat</h3>
@@ -186,24 +37,24 @@
     </nav>
 
     <br> 
-    <!--This was definitely a learning experience and going forward, I will definitely be using an external stylesheet. Unfortunately, due to time constraints, I haven't been able to both complete this assignment *and* convert all of my styling to an external CSS file. That is something I will be undertaking soon, simply to help clean up the HTML and make it more easily understandable-->
-    <div class="container">
+    <!--This was definitely a learning experience and going forward, I will definitely be using an external stylesheet from the beginning. Unfortunately, due to time constraints, I haven't been able to both complete this assignment *and* convert all of my styling to an external CSS file. That is something I will be undertaking soon, simply to help clean up the HTML and make it more easily understandable-->
+    <div class="container" id="mainContainer">
         <div class="row"> 
-            <div class="col-xs-12 col-sm-12 col-md-10"
-                style="background-color: rgb(255, 255, 255); max-height: 2000px; max-width: 600px; border: 1px solid #777; margin: -10px 20px 80px 20px; "
+            <div class="col-xs-5 col-sm-10 col-md-10"
+                style="background-color: rgba(255, 255, 255, 0.616); max-height: 2000px; max-width: 600px; border: 1px solid #777; margin: 0 20px 100px 20px; border-radius: 15px;"
                 id="mainContent">
                 <h2 style="margin: 15px 25px; text-shadow: 0px 0px 2px #725772"><strong>Portfolio</strong></h2>
                 <!--Basically what I've done is put two images per row, and then assigned col to each individual picture, depending on where the images need to be at what breakpoints-->
                 <div class="row">
-                    <hr style="background-color: rgb(224, 224, 224); height: 1px; margin-bottom: -4px">
+                    <hr style="background-color: rgba(255, 255, 255, 0.616); height: 1px; margin-bottom: -4px;">
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5"
-                        style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
+                        style="background-color: rgba(255, 255, 255, 0.616); height: 200px; margin: 20px auto; display: flex; justify-content: center; max-width: 250px;">
                         <img src="assets/images/wow-icon.png" class="imageEffect">
                         <div class="wowBox">WoW DPS Calculator
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5"
-                        style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
+                        style="background-color: rgba(255, 255, 255, 0.616); height: 200px; margin: 20px auto; display: flex; justify-content: center; max-width: 250px;" >
                         <img src="assets/images/deathstar-icon.jpg" class="imageEffect">
                         <div class="wowBox">Death Star v2.0
                         </div>
@@ -211,13 +62,13 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5"
-                        style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
+                        style="background-color: rgba(255, 255, 255, 0.616); height: 200px; margin: 20px auto; display: flex; justify-content: center; max-width: 250px;">
                         <img src="assets/images/skyrim-icon.jpg" class="imageEffect">
                         <div class="wowBox">Skyrim Re-re-re-release
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5"
-                        style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
+                        style="background-color: rgba(255, 255, 255, 0.616); height: 200px; margin: 20px auto; display: flex; justify-content: center; max-width: 250px;">
                         <img src="assets/images/hawking-icon.jpg" class="imageEffect">
                         <div class="wowBox" style="padding-top: 3px; line-height: 1.5">Stephen Hawking Quote of the Day
                         </div>
@@ -225,13 +76,13 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5"
-                        style="background-color: rgb(255, 255, 255); height: 200px; margin: 20px auto; display: flex; justify-content: center;">
+                        style="background-color: rgba(255, 255, 255, 0.616); height: 200px; margin: 20px auto; display: flex; justify-content: center; max-width: 250px;">
                         <img src="assets/images/galaxy-icon.jpg" class="imageEffect">
                         <div class="wowBox">The Entire History of Us
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5"
-                        style="background-color: rgba(255, 255, 255, 0); margin: 20px auto; display: flex; justify-content: center;"
+                        style="background-color: rgba(255, 255, 255, 0); margin: 20px auto; display: flex; justify-content: center; max-width: 250px;"
                         id="none">
                     </div>
                 </div>
