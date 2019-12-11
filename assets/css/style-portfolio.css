@@ -139,6 +139,8 @@ hr {
         right: 24.8px;
     }
 
+    
+
     #none {
         display: none;
     }    
@@ -172,7 +174,9 @@ hr {
     #mainContent {
         margin-top: -10px !important;
         margin-bottom: 60px !important;
+        padding: 0px 50px;
     }
+
     
    
 
