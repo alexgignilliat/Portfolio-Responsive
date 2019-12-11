@@ -1,0 +1,181 @@
+body {
+    background-image: url('./assets/images/prism.png');
+    line-height: 2.2;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2.5s; /* Firefox < 16 */
+     -ms-animation: fadein 2.5s; /* Internet Explorer */
+      -o-animation: fadein 2.5s; /* Opera < 12.1 */
+         animation: fadein 2.5s;  
+}
+
+.navbar-brand {
+    text-align: center;
+    background: #725772;
+    margin: 0;
+    height: 40px;
+    padding-top: 2px;
+}
+.navbar-brand:hover {
+    letter-spacing: 5px;
+    transition: 1s; 
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #777;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    text-align: center;
+    border-top: 4px solid #725772;
+}
+
+#navHover:hover {
+    box-shadow: 0px 0px 100px #725772;
+    transition: 1.8s;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 2px #725772;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(202, 202, 202);
+    background-color: #7257725b;
+    transition: .5s;
+
+}
+
+#main-div {
+    background-color: white;
+    max-width: 90%;
+    border: 1px solid #777;
+}
+
+
+#content {
+    border: 1px solid #777;
+    padding: 0px 25px 0px 25px;
+    max-width: 550px;
+}
+
+hr {
+    width: 86%;
+    margin-bottom: 20px;
+}
+
+.wowBox {
+    width: 200px;
+    background-color: #725772;
+    height: 55px;
+    text-align: center;
+    padding-top: 10px;
+    opacity: 0.95;
+    color: white;
+    position: absolute;
+    bottom: 20px; 
+    
+}
+#mainContent:hover {
+    box-shadow: 0px 0px 20px #725772;
+    transition-duration: 1s;
+    border: 1px solid rgba(0, 0, 0, 0.055);
+}
+.imageEffect {
+    filter: opacity(.5);
+    border-radius: 5px;
+}
+
+.imageEffect:hover {
+    filter: opacity(1);
+    transition: 1.5s;
+}
+
+/* - - -START QUERY - - -*/
+@media (max-width: 844px) {
+    .wowBox {
+        margin-left: 22%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 24.8px;
+    }
+
+    #none {
+        display: none;
+    }    
+    
+    #mainContent {
+        margin: auto !important;
+    }
+}
+/*- - - END QUERY - - -*/
+/* - - -START QUERY - - -*/
+@media (max-width: 640px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-brand {
+        flex: 100%;
+        text-align: center;
+        background: #725772;
+        margin: 0;
+        height: 75px;
+        padding-top: 18px;
+        border-radius: 0px;
+    }
+    
+
+    .nav {
+        margin: 0 auto;
+    }
+
+    #mainContent {
+        margin-top: -10px !important;
+        margin-bottom: 60px !important;
+    }
+    
+   
+
+    
+}
+/*- - - END QUERY - - -*/

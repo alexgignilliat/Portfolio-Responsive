@@ -1,0 +1,140 @@
+a {
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 2px #725772;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+a:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(202, 202, 202);
+    background-color: #7257725b;
+    transition: .5s;
+  }
+
+body {
+    background-image: url('./assets/images/prism.png');
+    line-height: 2.2;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    margin-bottom: 125px;
+    -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2.5s; /* Firefox < 16 */
+     -ms-animation: fadein 2.5s; /* Internet Explorer */
+      -o-animation: fadein 2.5s; /* Opera < 12.1 */
+         animation: fadein 2.5s;
+  }
+
+.navbar-brand {
+    
+    text-align: center;
+    background: #725772;
+    margin: 0;
+    height: 40px;
+    padding-top: 2px;
+  }
+
+.navbar-brand:hover {
+  letter-spacing: 5px;
+  transition: 1s; 
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #777;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    text-align: center;
+    border-top: 4px solid #725772;
+}
+
+#navHover:hover {
+    box-shadow: 0px 0px 100px #725772;
+    transition: 1.8s;
+    
+}
+
+#contactMain {
+    border: 1px solid #777;
+    border-radius: 15px;
+  }
+
+#contactMain:hover {
+    box-shadow: 0px 0px 40px #725772;
+    transition: 2s;
+    border: 1px solid white;
+}
+
+#btn {
+  background-color: #725772;
+  border-radius: 15px;
+  border: 0px;
+  padding-top: 4px;
+}
+
+#btn:hover {
+    background-color: #7257725b;
+    color: black;
+    transition: 1s;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+  /*START QUERY*/
+@media (max-width: 640px) {
+    .navbar {
+      padding: 0;
+    }
+
+    .navbar-brand {
+      flex: 100%;
+      text-align: center;
+      background: #725772;
+      margin: 0;
+      height: 75px;
+      padding-top: 18px;
+      border-radius: 0px;
+    }
+
+    .nav {
+      margin: 0 auto;
+    }
+}
+/*END QUERY*/
+
+  p {
+    padding: 0px 10px 10px 10px;
+  }
