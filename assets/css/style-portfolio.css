@@ -146,7 +146,7 @@ hr {
     }    
     
     #mainContent {
-        margin: auto !important;
+        margin: auto 10px !important;
     }
 }
 /*- - - END QUERY - - -*/
