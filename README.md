@@ -1,10 +1,10 @@
 # Responsive Portfolio
 
-This is my responsive portfolio created using Bootstrap! This was a huge undertaking, and while there are still a few things I'm working out, it's generally how I invisioned it.
+This is my responsive portfolio created using Bootstrap! This was a huge learning experience, and while there are still a few things I'm working out, it's generally how I invisioned it.
 
 ## Installation
 
-Clone to your local machine and check it out! Or visit the deployed version at: [Portfolio!](https://alexgignilliat.github.io/Portfolio-Responsive/)
+Clone to your local machine and check it out! Or visit the deployed version at: [Portfolio on GitHub Pages](https://alexgignilliat.github.io/Portfolio-Responsive/)
 
 ## Features, Important Notes, etc
 
