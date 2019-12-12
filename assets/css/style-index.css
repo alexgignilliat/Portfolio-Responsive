@@ -38,7 +38,9 @@ body {
 }
 
 /*End fade in effect*/
-
+hr {
+  margin-bottom: -12px;
+}
 p {
   padding: 0px 10px 10px 10px;
 }
@@ -134,7 +136,7 @@ footer {
     }
     hr {
       width: 100%;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
     #content {
       border: 1px solid #777;

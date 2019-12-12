@@ -1,10 +1,10 @@
 <!--Hey there! Thanks for checking out my code. Just wanted to say upfront that while I did my best to follow the guidelines, I did add some of my own style. That being said, one thing I noticed in the examples given is that the main content areas are offset to the left in larger viewports. I did my best to stick to that.-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>Contact | Alex Gignilliat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,6 +16,7 @@
     }
   </style>
 </head>
+
 <body>
   <!--Bootstrap navbars for the win!-->
   <nav class="navbar navbar-expand-xxl navbar-light bg-light" style="border-bottom:2px solid #725772" id="navHover">
@@ -35,14 +36,15 @@
     </ul>
   </nav>
 
-  <br> <!--Breaking between navigation bar and main page content-->
-  <!--This was definitely a learning experience and going forward, I will definitely be using an external stylesheet. Unfortunately, due to time constraints, I haven't been able to both complete this assignment *and* convert all of my styling to an external CSS file. That is something I will be undertaking soon, simply to help clean up the HTML and make it more easily understandable-->
-  <div class="container" style="margin-top: -10px;" >
+  <br>
+  <!--This next part was definitely a learning experience. I essentially did all of my styling inline... not a great move lol. I've converted almost all of my CSS to it's own respective external file, but there are still a few things that break when swapping over. Any inline CSS you see is the remnants of an absolute mess. Live and learn!-->
+  <div class="container" style="margin-top: -10px;">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-8 " style="background-color: rgba(231, 2, 2, 0); border: 0px;">
-        <div class="card mt-1" style="background-color: rgba(255, 255, 255, 0.575); border-radius: 25px"  >
+        <div class="card mt-1" style="background-color: rgba(255, 255, 255, 0.575); border-radius: 25px">
           <div class="card-body" id="contactMain" style="border-radius: 25px">
-            <h2 class="card-title" style="padding: 0px 0px 10px 0px; text-shadow: 0px 0px 2px #725772; border: 0px;"><strong>Contact</strong></h2>
+            <h2 class="card-title" style="padding: 0px 0px 10px 0px; text-shadow: 0px 0px 2px #725772; border: 0px;">
+              <strong>Contact</strong></h2>
             <hr style="background-color: rgb(224, 224, 224); height: 1px;">
             <form>
               <div class="form-group">
@@ -71,4 +73,5 @@
       Copyright &copy; 2019</p>
   </footer>
 </body>
+
 </html>

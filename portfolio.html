@@ -1,24 +1,26 @@
 <!--Hey there! Thanks for checking out my code. Just wanted to say upfront that while I did my best to follow the guidelines, I did add some of my own style. That being said, one thing I noticed in the examples given is that the main content areas are offset to the left in larger viewports. I did my best to stick to that.-->
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Portfolio | Alex Gignilliat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style-portfolio.css">
     <style>
-    body {
-        background-image: url('./assets/images/prism.png');
-    }
+        body {
+            background-image: url('./assets/images/prism.png');
+        }
     </style>
 </head>
+
 <body>
     <!--Bootstrap navbars for the win!-->
-    <nav class="navbar navbar-expand-xxl navbar-light bg-light" style="border-bottom:2px solid #725772;"
-        id="navHover">
+    <nav class="navbar navbar-expand-xxl navbar-light bg-light" style="border-bottom:2px solid #725772;" id="navHover">
         <a class="navbar-brand" href="https://www.github.com/alexgignilliat" target="_blank">
             <h3 class="navName">Alex Gignilliat</h3>
         </a>
@@ -34,11 +36,10 @@
             </li>
         </ul>
     </nav>
-
-    <br> 
-    <!--This was definitely a learning experience and going forward, I will definitely be using an external stylesheet from the beginning. Unfortunately, due to time constraints, I haven't been able to both complete this assignment *and* convert all of my styling to an external CSS file. That is something I will be undertaking soon, simply to help clean up the HTML and make it more easily understandable-->
+    <br>
+    <!--This next part was definitely a learning experience. I started off essentially doing all of my styling inline... not a great move lol. I've since converted almost all of my CSS to it's own respective external file, but there are still a few things that break when swapping over. Any inline CSS you see is what remains of an absolute mess. Live and learn!-->
     <div class="container" id="mainContainer">
-        <div class="row"> 
+        <div class="row">
             <div class="col-xs-5 col-sm-10 col-md-10"
                 style="background-color: rgba(255, 255, 255, 0.616); max-height: 2000px; max-width: 600px; border: 1px solid #777; margin: 0 20px 100px 20px; border-radius: 15px;"
                 id="mainContent">
@@ -49,12 +50,12 @@
                     <hr style="background-color: rgba(255, 255, 255, 0.616); height: 1px; margin-bottom: -4px;">
                     <!--WoW DPS Calculator-->
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5" id="imageBox">
-                        <img src="assets/images/wow-icon.png" class="imageEffect">
+                        <img src="assets/images/wow-icon.png" class="imageEffect" alt="world of Warcraft">
                         <div class="wowBox">WoW DPS Calculator
                         </div>
                     </div>
                     <!--Death Star v2.0-->
-                    <div class="col-xxs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5" id="imageBox">
+                    <div class="col-xxs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5" id="imageBox" alt="Death Star">
                         <img src="assets/images/deathstar-icon.jpg" class="imageEffect">
                         <div class="wowBox">Death Star v2.0
                         </div>
@@ -64,13 +65,13 @@
                 <div class="row">
                     <!--Skyrim Re-re-re-release-->
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5" id="imageBox">
-                        <img src="assets/images/skyrim-icon.jpg" class="imageEffect">
+                        <img src="assets/images/skyrim-icon.jpg" class="imageEffect" alt="Skyrim">
                         <div class="wowBox">Skyrim Re-re-re-release
                         </div>
                     </div>
                     <!--Stephen Hawking Quote of the Day-->
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5" id="imageBox">
-                        <img src="assets/images/hawking-icon.jpg" class="imageEffect">
+                        <img src="assets/images/hawking-icon.jpg" class="imageEffect" alt="Stephen Hawking">
                         <div class="wowBox" style="padding-top: 3px; line-height: 1.5">Stephen Hawking Quote of the Day
                         </div>
                     </div>
@@ -79,7 +80,7 @@
                 <div class="row">
                     <!--The Entire History of Us-->
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5" id="imageBox">
-                        <img src="assets/images/galaxy-icon.jpg" class="imageEffect">
+                        <img src="assets/images/galaxy-icon.jpg" class="imageEffect" alt="Galaxy">
                         <div class="wowBox">The Entire History of Us
                         </div>
                     </div>
@@ -94,7 +95,8 @@
     </div>
     <footer>
         <p>- Alex Gignilliat - <br>
-        Copyright &copy; 2019</p>
+            Copyright &copy; 2019</p>
     </footer>
 </body>
+
 </html>
