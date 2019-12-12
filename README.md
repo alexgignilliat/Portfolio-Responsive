@@ -6,13 +6,17 @@ This is my responsive portfolio created using Bootstrap! This was a huge learnin
 
 Clone to your local machine and check it out! Or visit the deployed version at: [Portfolio on GitHub Pages](https://alexgignilliat.github.io/Portfolio-Responsive/)
 
+## Technologies Utilized
+
+HTML5, CSS3, Bootstrap 4
+
 ## Features, Important Notes, etc
 
 While I generally tried to replicate my previous portfolio, I took a lot more creative liberties this time around. The general aesthetic is much more in line with my personal tastes and style. Due to the guidelines given, I've offset the main content areas to match the examples. Would love to have them centered, or maybe put some media icons to my GitHub, Stack Overflow, etc to fill in the gap.
 
 Some things I added to make the page pop include:
 
-- Name in nav bar directs user to GitHub profile
+- Name in navbar directs user to GitHub profile
 - Fade in on page load
 - On hover button effects
 - On hover image opacity effects
@@ -20,7 +24,6 @@ Some things I added to make the page pop include:
 - On hover navbar glow effects
 - Contact form submit button stretch effect
 - etc etc etc. Check it out yourself to see!
-
 
 ## Contributing
 
@@ -52,4 +55,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+- - - - -
 
+“Remember to look up at the stars and not down at your feet. Try to make sense of what you see and wonder about what makes the Universe exist. Be curious. And however difficult life may seem, there is always something you can do and succeed at. It matters that you don't just give up."  - Stephen Hawking
