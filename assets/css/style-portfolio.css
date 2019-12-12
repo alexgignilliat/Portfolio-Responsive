@@ -6,9 +6,9 @@ body {
 /* Did some serious Google-fu on this and found the skeleton for this on Stack Overflow and used my own values. Really makes the page pop! */
     -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2.5s; /* Firefox < 16 */
-     -ms-animation: fadein 2.5s; /* Internet Explorer */
-      -o-animation: fadein 2.5s; /* Opera < 12.1 */
-         animation: fadein 2.5s;  
+    -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -o-animation: fadein 2.5s; /* Opera < 12.1 */
+    animation: fadein 2.5s; 
 }
 .navbar-brand {
     text-align: center;
@@ -64,15 +64,13 @@ a {
     color: rgb(0, 0, 0);
     text-shadow: 0px 0px 2px #725772;
     border-radius: 10px;
-    padding: 10px;
-    
+    padding: 10px; 
 }
 a:hover {
     color: rgb(255, 255, 255);
     box-shadow: 0px 0px 5px rgb(202, 202, 202);
     background-color: #7257725b;
     transition: .5s;
-
 }
 #main-div {
     background-color: white;
@@ -107,10 +105,20 @@ hr {
 .imageEffect {
     filter: opacity(.5);
     border-radius: 5px;
+    box-shadow: 0px 0px 0px 5px rgba(119, 119, 119, 0.466);
 }
 .imageEffect:hover {
     filter: opacity(1);
     transition: 1.5s;
+    box-shadow: 0px 0px 0px 15px rgba(255, 255, 255, 0.295);
+}
+#imageBox {
+    background-color: rgba(255, 255, 255, 0);
+    height: 200px; 
+    margin: 20px auto; 
+    display: flex; 
+    justify-content: center; 
+    max-width: 250px;
 }
 /* - - -START QUERY - - -*/
 @media (max-width: 844px) {
@@ -125,7 +133,7 @@ hr {
         display: none;
     }    
     #mainContent {
-        margin: auto 10px !important;
+        margin: auto !important;
     }
 }
 /*- - - END QUERY - - -*/

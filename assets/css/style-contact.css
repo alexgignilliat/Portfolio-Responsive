@@ -22,15 +22,14 @@ body {
      -ms-animation: fadein 2.5s; /* Internet Explorer */
       -o-animation: fadein 2.5s; /* Opera < 12.1 */
          animation: fadein 2.5s;
-  }
+}
 .navbar-brand {
-    
     text-align: center;
     background: #725772;
     margin: 0;
     height: 40px;
     padding-top: 2px;
-  }
+}
 .navbar-brand:hover {
   letter-spacing: 5px;
   transition: 1s; 
@@ -73,12 +72,11 @@ footer {
 #navHover:hover {
     box-shadow: 0px 0px 100px #725772;
     transition: 1.8s;
-    
 }
 #contactMain {
     border: 1px solid #777;
     border-radius: 15px;
-  }
+}
 #contactMain:hover {
     box-shadow: 0px 0px 40px #725772;
     transition: 2s;
@@ -97,7 +95,6 @@ footer {
   transition: 1s;
   letter-spacing: 10px;
   padding: 5px 8px 5px 15px;
-    
 }
 
 /*START QUERY*/
@@ -119,6 +116,3 @@ footer {
     }
 }
 /*END QUERY*/
-p {
-  padding: 0px 10px 10px 10px;
-}
