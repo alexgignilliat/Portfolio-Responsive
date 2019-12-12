@@ -8,7 +8,7 @@ Clone to your local machine and check it out! Or visit the deployed version at: 
 
 ## Features, Important Notes, etc
 
-While I generally tried to replicate my previous portfolio, I took a lot more creative liberties this time around. The general aesthetic is much more in line with my personal tastes and style.
+While I generally tried to replicate my previous portfolio, I took a lot more creative liberties this time around. The general aesthetic is much more in line with my personal tastes and style. Due to the guidelines given, I've offset the main content areas to match the examples. Would love to have them centered, or maybe put some media icons to my GitHub, Stack Overflow, etc to fill in the gap.
 
 Some things I added to make the page pop include:
 
