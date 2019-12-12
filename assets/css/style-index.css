@@ -1,15 +1,3 @@
-a {
-  color: rgb(0, 0, 0);
-  text-shadow: 0px 0px 2px #725772;
-  border-radius: 10px;
-  padding: 10px;
-}
-a:hover {
-    color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 5px rgb(202, 202, 202);
-    background-color: #7257725b;
-    transition: .5s;
-}
 body {
     background-image: url('./assets/images/prism.png');
     line-height: 2.2;
@@ -20,25 +8,10 @@ body {
 /* Did some serious Google-fu on this and found the skeleton for this on Stack Overflow and used my own values. Really makes the page pop! */
     -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2.5s; /* Firefox < 16 */
-     -ms-animation: fadein 2.5s; /* Internet Explorer */
-      -o-animation: fadein 2.5s; /* Opera < 12.1 */
-         animation: fadein 2.5s;
+    -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -o-animation: fadein 2.5s; /* Opera < 12.1 */
+    animation: fadein 2.5s;
 }
-p {
-  padding: 0px 10px 10px 10px;
-}
-.navbar-brand {
-  text-align: center;
-  background: #725772;
-  margin: 0;
-  height: 40px;
-  padding-top: 2px;
-}
-.navbar-brand:hover {
-  letter-spacing: 5px;
-  transition: 1s; 
-}
-/* Did some serious Google-fu on this and found the skeleton for this on Stack Overflow and used my own values. Really makes the page pop! */
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -63,10 +36,39 @@ p {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+/*End fade in effect*/
+
+p {
+  padding: 0px 10px 10px 10px;
+}
+.navbar-brand {
+  text-align: center;
+  background: #725772;
+  margin: 0;
+  height: 40px;
+  padding-top: 2px;
+}
+a {
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 2px #725772;
+  border-radius: 10px;
+  padding: 10px;
+}
+a:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(202, 202, 202);
+    background-color: #7257725b;
+    transition: .5s;
+}
+.navbar-brand:hover {
+  letter-spacing: 5px;
+  transition: 1s; 
+}
 footer {
   width: 100%;
   height: 45px;
-  background-color: #777;
+  background-color: rgba(119, 119, 119, 0.973);
   position: fixed;
   bottom: 0;
   margin: 0;
@@ -141,4 +143,3 @@ footer {
     }
   }
 /*- - - END QUERY - - -*/
-
