@@ -34,14 +34,19 @@
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="assets\documents\AlexGignilliat-Resume.docx">Download Resume</a>
+            </li>
         </ul>
     </nav>
     <br>
+    <img class="githubIcon" src="assets/images/github.png">
     <!--This next part was definitely a learning experience. I started off essentially doing all of my styling inline... not a great move lol. I've since converted almost all of my CSS to it's own respective external file, but there are still a few things that break when swapping over. Any inline CSS you see is what remains of an absolute mess. Live and learn!-->
+    
     <div class="container" id="mainContainer">
         <div class="row">
-            <div class="col-xs-5 col-sm-10 col-md-10"
-                style="background-color: rgba(255, 255, 255, 0.616); max-height: 2000px; max-width: 600px; border: 1px solid #777; margin: 0 20px 100px 20px; border-radius: 15px;"
+            <div class="col-xs-5 col-sm-12 col-md-12"
+                style=""
                 id="mainContent">
                 <h2 style="margin: 15px 25px 0px 25px; text-shadow: 0px 0px 2px #725772"><strong>Portfolio</strong></h2>
                 <!--Basically what I've done is put two images per row, and then assigned col to each individual picture, depending on where the images need to be at what breakpoints-->
@@ -50,39 +55,39 @@
                     <hr style="background-color: rgba(255, 255, 255, 0.616); height: 1px; margin-bottom: -4px;">
                     <!--WoW DPS Calculator-->
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5" id="imageBox">
-                        <img src="assets/images/wow-icon.png" class="imageEffect" alt="World of Warcraft">
-                        <div class="wowBox">WoW DPS Calculator
-                        </div>
+                        <a href="https://github.com/alexgignilliat/Digital-Asset-Monitor">Github</a>
+                        <a target="_blank" href="https://alexgignilliat.github.io/Digital-Asset-Monitor/"><img src="assets/images/resizemonitor.png"></a>
+                        <p>Digital Asset Monitor</p>
+                        
+                        
                     </div>
                     <!--Death Star v2.0-->
                     <div class="col-xxs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5" id="imageBox">
-                        <img src="assets/images/deathstar-icon.jpg" class="imageEffect" alt="Death Star">
-                        <div class="wowBox">Death Star v2.0
-                        </div>
+                        <a href="https://github.com/alexgignilliat/Password-Generator">Github</a>
+                        <a target="_blank" href="https://alexgignilliat.github.io/Password-Generator/"><img src="assets/images/resizepassword.png"></a>
+                        <p>Password Generator</p>
+
                     </div>
                 </div>
                 <!--Row start-->
                 <div class="row">
                     <!--Skyrim Re-re-re-release-->
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5" id="imageBox">
-                        <img src="assets/images/skyrim-icon.jpg" class="imageEffect" alt="Skyrim">
-                        <div class="wowBox">Skyrim Re-re-re-release
-                        </div>
+                        <a href="https://github.com/alexgignilliat/Day-Planner">Github</a>
+                        <a target="_blank" href="https://alexgignilliat.github.io/Day-Planner/"><img src="assets/images/resizeplanner.png"></a>
+                        <p>Day Planner</p>
                     </div>
                     <!--Stephen Hawking Quote of the Day-->
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5" id="imageBox">
-                        <img src="assets/images/hawking-icon.jpg" class="imageEffect" alt="Stephen Hawking">
-                        <div class="wowBox" style="padding-top: 3px; line-height: 1.5">Stephen Hawking Quote of the Day
-                        </div>
+                        <!-- <a target="_blank" href="https://www.google.com"><img src="assets/images/deathstar-icon.jpg"></a> -->
+
                     </div>
                 </div>
                 <!--Row start-->
                 <div class="row">
                     <!--The Entire History of Us-->
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5" id="imageBox">
-                        <img src="assets/images/galaxy-icon.jpg" class="imageEffect" alt="Galaxy">
-                        <div class="wowBox">The Entire History of Us
-                        </div>
+
                     </div>
                     <!--I'm still debugging this last box and unfortunately, it doesn't want to work correctly inside my external CSS file. Basically all that's going on is I've created an "empty" box that shares properties with the other portfolio images. The difference is that at a certain width, it collapses into nothing, effectively hiding itself. I did it this way to keep the images properly aligned. Please pardon the mess in the div below while I solve this issue!-->
                     <div class="col-xs-12 col-sm-10 col-md-5 col-lg-5 col-xl-5"

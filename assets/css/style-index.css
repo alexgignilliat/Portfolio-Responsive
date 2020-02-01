@@ -63,6 +63,10 @@ a:hover {
     background-color: #7257725b;
     transition: .5s;
 }
+
+#imageLink {
+  padding: 0px
+}
 .navbar-brand:hover {
   letter-spacing: 5px;
   transition: 1s; 
@@ -109,7 +113,7 @@ footer {
     }
     .headshot {
       width: 90%;
-      margin: 25px 20px 30px 20px;
+      margin: 35px 20px 30px 20px;
     }
     .navbar-brand {
       flex: 100%;
